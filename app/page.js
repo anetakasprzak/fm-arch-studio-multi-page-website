@@ -1,6 +1,7 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
+
+import { Heading } from "./page.styled";
 
 export default function Home() {
-  return <div>Hello Home Page</div>;
+  return <Heading>Hello Home Page</Heading>;
 }
