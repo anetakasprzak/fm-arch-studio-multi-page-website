@@ -1,10 +1,18 @@
 "use client";
 
 import Image from "next/image";
-import { HamburgerWrapper, MobileMenu, NavBarWrapper } from "./Navbar.styled";
+import {
+  HamburgerWrapper,
+  MobileMenuLinks,
+  MobileMenuWrapper,
+  NavBarWrapper,
+} from "./Navbar.styled";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <>
       <NavBarWrapper>
@@ -14,7 +22,7 @@ export default function Navbar() {
           width={77}
           height={32}
         />
-        <HamburgerWrapper>
+        <HamburgerWrapper onClick={() => setIsMenuOpen((open) => !open)}>
           <Image
             src="/assets/icons/icon-hamburger.svg"
             alt="nav hamburger"
@@ -23,18 +31,22 @@ export default function Navbar() {
           />
         </HamburgerWrapper>
       </NavBarWrapper>
-      <MobileMenu>
-        <li>
-          <Link href="/portfolio">Portfolio</Link>
-        </li>
+      {isMenuOpen && (
+        <MobileMenuWrapper>
+          <MobileMenuLinks>
+            <li>
+              <Link href="/portfolio">Portfolio</Link>
+            </li>
 
-        <li>
-          <Link href="/about">About Us</Link>
-        </li>
-        <li>
-          <Link href="/contact">Contact</Link>
-        </li>
-      </MobileMenu>
+            <li>
+              <Link href="/about">About Us</Link>
+            </li>
+            <li>
+              <Link href="/contact">Contact</Link>
+            </li>
+          </MobileMenuLinks>
+        </MobileMenuWrapper>
+      )}
     </>
   );
 }

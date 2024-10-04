@@ -9,4 +9,6 @@ export const NavBarWrapper = styled.div`
 
 export const HamburgerWrapper = styled.div``;
 
-export const MobileMenu = styled.ul``;
+export const MobileMenuWrapper = styled.div``;
+
+export const MobileMenuLinks = styled.ul``;
