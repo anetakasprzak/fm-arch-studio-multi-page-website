@@ -5,10 +5,38 @@ export const NavBarWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 3rem 2.2rem;
+
+  position: relative;
 `;
 
 export const HamburgerWrapper = styled.div``;
 
 export const MobileMenuWrapper = styled.div``;
 
-export const MobileMenuLinks = styled.ul``;
+export const MobileMenuLinks = styled.ul`
+  background-color: #eeeff4;
+  width: 90%;
+  position: absolute;
+  right: 0;
+  z-index: 999;
+  padding: 3.4rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+`;
+
+export const MenuLink = styled.li`
+  color: #1b1d23;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 4rem;
+`;
+
+export const Overlay = styled.div`
+  position: absolute;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  z-index: 1;
+`;

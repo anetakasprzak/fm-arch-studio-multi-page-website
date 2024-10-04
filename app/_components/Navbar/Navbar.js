@@ -4,8 +4,10 @@ import Image from "next/image";
 import {
   HamburgerWrapper,
   MobileMenuLinks,
+  MenuLink,
   MobileMenuWrapper,
   NavBarWrapper,
+  Overlay,
 } from "./Navbar.styled";
 import Link from "next/link";
 import { useState } from "react";
@@ -34,17 +36,17 @@ export default function Navbar() {
       {isMenuOpen && (
         <MobileMenuWrapper>
           <MobileMenuLinks>
-            <li>
+            <MenuLink onClick={() => setIsMenuOpen(false)}>
               <Link href="/portfolio">Portfolio</Link>
-            </li>
-
-            <li>
+            </MenuLink>
+            <MenuLink onClick={() => setIsMenuOpen(false)}>
               <Link href="/about">About Us</Link>
-            </li>
-            <li>
+            </MenuLink>
+            <MenuLink onClick={() => setIsMenuOpen(false)}>
               <Link href="/contact">Contact</Link>
-            </li>
+            </MenuLink>
           </MobileMenuLinks>
+          <Overlay onClick={() => setIsMenuOpen(false)} />
         </MobileMenuWrapper>
       )}
     </>
