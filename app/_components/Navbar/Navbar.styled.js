@@ -9,9 +9,17 @@ export const NavBarWrapper = styled.div`
   position: relative;
 `;
 
-export const HamburgerWrapper = styled.div``;
+export const HamburgerWrapper = styled.div`
+  @media screen and (min-width: 25em) {
+    display: none;
+  }
+`;
 
-export const MobileMenuWrapper = styled.div``;
+export const MobileMenuWrapper = styled.div`
+  @media screen and (min-width: 25em) {
+    display: none;
+  }
+`;
 
 export const MobileMenuLinks = styled.ul`
   background-color: #eeeff4;
@@ -23,6 +31,10 @@ export const MobileMenuLinks = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 1.7rem;
+
+  @media screen and (min-width: 25em) {
+    padding: 4rem 5rem;
+  }
 `;
 
 export const MenuLink = styled.li`
