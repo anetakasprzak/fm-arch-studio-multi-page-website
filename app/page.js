@@ -1,7 +1,7 @@
 "use client";
 
-import { Heading } from "./page.styled";
+import { Wrapper } from "./page.styled";
 
 export default function Home() {
-  return <Heading>Hello Home Page</Heading>;
+  return <Wrapper>Hello Home Page</Wrapper>;
 }
