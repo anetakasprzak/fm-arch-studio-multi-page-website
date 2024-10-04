@@ -4,10 +4,12 @@ import Image from "next/image";
 import {
   HamburgerWrapper,
   MobileMenuLinks,
-  MenuLink,
+  MobileMenuLink,
   MobileMenuWrapper,
   NavBarWrapper,
   Overlay,
+  Menu,
+  MenuLink,
 } from "./Navbar.styled";
 import Link from "next/link";
 import { useState } from "react";
@@ -24,6 +26,17 @@ export default function Navbar() {
           width={77}
           height={32}
         />
+        <Menu>
+          <MenuLink>
+            <Link href="/portfolio">Portfolio</Link>
+          </MenuLink>
+          <MenuLink>
+            <Link href="/about">About Us</Link>
+          </MenuLink>
+          <MenuLink>
+            <Link href="/contact">Contact</Link>
+          </MenuLink>
+        </Menu>
         <HamburgerWrapper onClick={() => setIsMenuOpen((open) => !open)}>
           <Image
             src="/assets/icons/icon-hamburger.svg"
@@ -36,15 +49,15 @@ export default function Navbar() {
       {isMenuOpen && (
         <MobileMenuWrapper>
           <MobileMenuLinks>
-            <MenuLink onClick={() => setIsMenuOpen(false)}>
+            <MobileMenuLink onClick={() => setIsMenuOpen(false)}>
               <Link href="/portfolio">Portfolio</Link>
-            </MenuLink>
-            <MenuLink onClick={() => setIsMenuOpen(false)}>
+            </MobileMenuLink>
+            <MobileMenuLink onClick={() => setIsMenuOpen(false)}>
               <Link href="/about">About Us</Link>
-            </MenuLink>
-            <MenuLink onClick={() => setIsMenuOpen(false)}>
+            </MobileMenuLink>
+            <MobileMenuLink onClick={() => setIsMenuOpen(false)}>
               <Link href="/contact">Contact</Link>
-            </MenuLink>
+            </MobileMenuLink>
           </MobileMenuLinks>
           <Overlay onClick={() => setIsMenuOpen(false)} />
         </MobileMenuWrapper>
