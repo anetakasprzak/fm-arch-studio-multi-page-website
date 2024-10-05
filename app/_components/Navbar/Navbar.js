@@ -12,12 +12,20 @@ import {
   MenuLink,
 } from "./Navbar.styled";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const currentPath = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [isMenuOpen]);
 
   return (
     <>
