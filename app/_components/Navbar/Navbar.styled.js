@@ -36,12 +36,6 @@ export const Menu = styled.ul`
   @media screen and (min-width: 35em) {
     display: flex;
     gap: 5rem;
-
-    a {
-      color: #7d828f;
-      font-weight: 700;
-      line-height: 2.5rem;
-    }
   }
 
   @media screen and (min-width: 50em) {
@@ -51,6 +45,21 @@ export const Menu = styled.ul`
 
 export const MenuLink = styled.li`
   cursor: pointer;
+
+  a {
+    padding-bottom: 0.5rem;
+    color: ${(props) => (props.isActive ? "#000" : "#7d828f")};
+    border-bottom: ${(props) => (props.isActive ? "2px solid #000" : "")};
+    font-weight: 700;
+    line-height: 2.5rem;
+    transition: all 0.3s;
+  }
+
+  @media screen and (min-width: 50em) {
+    a:hover {
+      color: #000;
+    }
+  }
 `;
 
 export const MobileMenuWrapper = styled.div`

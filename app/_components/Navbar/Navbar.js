@@ -13,8 +13,10 @@ import {
 } from "./Navbar.styled";
 import Link from "next/link";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
+  const currentPath = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(true);
 
   return (
@@ -29,13 +31,13 @@ export default function Navbar() {
           />
         </Link>
         <Menu>
-          <MenuLink>
+          <MenuLink isActive={currentPath === "/portfolio"}>
             <Link href="/portfolio">Portfolio</Link>
           </MenuLink>
-          <MenuLink>
+          <MenuLink isActive={currentPath === "/about"}>
             <Link href="/about">About Us</Link>
           </MenuLink>
-          <MenuLink>
+          <MenuLink isActive={currentPath === "/contact"}>
             <Link href="/contact">Contact</Link>
           </MenuLink>
         </Menu>
