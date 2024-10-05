@@ -20,7 +20,11 @@ export const NavBarWrapper = styled.div`
   }
 
   @media screen and (min-width: 90em) {
-    padding: 6rem 10rem;
+    padding: 6rem 12rem;
+  }
+
+  @media screen and (min-width: 106em) {
+    padding: 6rem 20rem;
   }
 `;
 

@@ -27,9 +27,9 @@ const PortfolioElement = ({ obj }) => {
   return (
     <PortfolioElementWrapper>
       <PortfolioImage>
-        <source srcSet={image.desktop} media="(min-width: 90em)" />
-        <source srcSet={image.tablet} media="(min-width: 48em)" />
-        <source srcSet={image.mobile} media="(min-width: 23.4em)" />
+        <source srcSet={image.desktop} media="(min-width: 62em)" />
+        <source srcSet={image.tablet} media="(min-width: 34.5em)" />
+        <source srcSet={image.mobile} media="(min-width: 15em)" />
         <Image
           src={image.mobile}
           alt="portfolio image"
