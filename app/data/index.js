@@ -85,8 +85,8 @@ export const portfolioData = [
     date: "January 2012",
     image: {
       mobile: "/assets/portfolio/mobile/image-hypers.jpg",
-      tablet: "/assets/portfolio/tablet/image-hypers.jp",
-      desktop: "/assets/portfolio/desktop/image-hypers.jp",
+      tablet: "/assets/portfolio/tablet/image-hypers.jpg",
+      desktop: "/assets/portfolio/desktop/image-hypers.jpg",
     },
   },
   {

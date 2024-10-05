@@ -3,22 +3,29 @@
 import Image from "next/image";
 import "./page.styled";
 import { portfolioData } from "@/app/data";
-import { PortfolioImage } from "./page.styled";
+import {
+  PortfolioImage,
+  PortfolioElementWrapper,
+  TextBox,
+  PortfolioElTitle,
+  PortfolioElDate,
+  PortfolioSectionWrapper,
+} from "./page.styled";
 
 const PortfolioPage = () => {
   return (
-    <div>
+    <PortfolioSectionWrapper>
       {portfolioData.map((obj) => {
         return <PortfolioElement key={obj.id} obj={obj} />;
       })}
-    </div>
+    </PortfolioSectionWrapper>
   );
 };
 
 const PortfolioElement = ({ obj }) => {
   const { image, title, date } = obj;
   return (
-    <div>
+    <PortfolioElementWrapper>
       <PortfolioImage>
         <source srcSet={image.desktop} media="(min-width: 90em)" />
         <source srcSet={image.tablet} media="(min-width: 48em)" />
@@ -31,11 +38,11 @@ const PortfolioElement = ({ obj }) => {
           layout="responsive"
         />
       </PortfolioImage>
-      <div>
-        <p>{title}</p>
-        <p>{date}</p>
-      </div>
-    </div>
+      <TextBox>
+        <PortfolioElTitle>{title}</PortfolioElTitle>
+        <PortfolioElDate>{date}</PortfolioElDate>
+      </TextBox>
+    </PortfolioElementWrapper>
   );
 };
 
