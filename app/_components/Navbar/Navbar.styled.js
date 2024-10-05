@@ -10,7 +10,17 @@ export const NavBarWrapper = styled.div`
 
   @media screen and (min-width: 35em) {
     justify-content: flex-start;
-    /* gap: 7rem; */
+    gap: 6rem;
+    padding: 4rem 5rem;
+  }
+
+  @media screen and (min-width: 50em) {
+    gap: 10rem;
+    padding: 5rem 7rem;
+  }
+
+  @media screen and (min-width: 90em) {
+    padding: 6rem 10rem;
   }
 `;
 
@@ -25,14 +35,17 @@ export const Menu = styled.ul`
 
   @media screen and (min-width: 35em) {
     display: flex;
-    gap: 2rem;
-    margin: 0 auto;
+    gap: 5rem;
 
     a {
       color: #7d828f;
       font-weight: 700;
       line-height: 2.5rem;
     }
+  }
+
+  @media screen and (min-width: 50em) {
+    gap: 7rem;
   }
 `;
 

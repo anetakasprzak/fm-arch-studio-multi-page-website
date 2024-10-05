@@ -20,12 +20,14 @@ export default function Navbar() {
   return (
     <>
       <NavBarWrapper>
-        <Image
-          src="/assets/logo.svg"
-          alt="company logo"
-          width={77}
-          height={32}
-        />
+        <Link href="/">
+          <Image
+            src="/assets/logo.svg"
+            alt="company logo"
+            width={77}
+            height={32}
+          />
+        </Link>
         <Menu>
           <MenuLink>
             <Link href="/portfolio">Portfolio</Link>
