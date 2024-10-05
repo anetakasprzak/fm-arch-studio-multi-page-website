@@ -8,6 +8,8 @@ import {
   HeroHeading,
   HeroText,
 } from "./page.styled";
+import Button from "./_components/button/Button";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -40,6 +42,9 @@ export default function Home() {
             Project made for an art museum near Southwest London. Project
             Paramour is a statement of bold, modern architecture.
           </HeroText>
+          <Link href="/portfolio">
+            <Button>See Our Portfolio</Button>
+          </Link>
         </HeroContentBox>
       </HeroWrapper>
     </>
