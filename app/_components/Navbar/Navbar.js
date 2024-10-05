@@ -17,7 +17,7 @@ import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const currentPath = usePathname();
-  const [isMenuOpen, setIsMenuOpen] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <>
