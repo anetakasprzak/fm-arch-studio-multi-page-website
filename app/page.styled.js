@@ -105,7 +105,16 @@ export const HeroText = styled.p`
 
 ////////////////// WELCOME SECTION //////////////////////
 
-export const WelcomeWrapper = styled.div``;
+export const WelcomeWrapper = styled.div`
+  padding: 4rem 3.2rem;
+`;
+
+export const MobileMiniBorder = styled.span`
+  border-bottom: 5px solid #c8ccd8;
+  width: 100%;
+  /* height: 5px;
+  width: 6.5rem; */
+`;
 
 export const WelcomeSpan = styled.span`
   display: none;
@@ -134,3 +143,7 @@ export const WelcomeSpan = styled.span`
     letter-spacing: -5px;
   }
 `;
+
+export const WelcomeHeading = styled.h1``;
+
+export const WelcomeText = styled.p``;
