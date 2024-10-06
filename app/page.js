@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import Image from "next/image";
@@ -28,12 +29,9 @@ export default function Home() {
             srcSet="/assets/home/mobile/image-hero-paramour.jpg"
             media="(min-width: 15em)"
           />
-          <Image
+          <img
             src="/assets/home/mobile/image-hero-paramour.jpg"
             alt="hero image"
-            width={300}
-            height={360}
-            layout="responsive"
           />
         </MainPageImgWrapper>
         <HeroContentBox>

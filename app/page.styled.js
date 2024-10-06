@@ -2,23 +2,37 @@ import styled from "styled-components";
 
 export const HeroWrapper = styled.div`
   position: relative;
+
+  @media screen and (min-width: 72rem) {
+    padding: 0 8rem;
+  }
 `;
 
 export const MainPageImgWrapper = styled.picture`
   filter: brightness(0.7);
 
-  @media screen and (min-width: 43rem) {
-    height: 45rem;
-    img,
-    picture {
-      width: 100%;
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 61rem;
+  }
+
+  @media screen and (min-width: 35rem) {
+    img {
+      height: 68rem;
+    }
+  }
+
+  @media screen and (min-width: 50rem) {
+    img {
+      height: 74rem;
     }
   }
 `;
 
 export const HeroContentBox = styled.div`
   position: absolute;
-  top: 7rem;
+  top: 10rem;
   left: 2rem;
   color: #fff;
 
@@ -30,6 +44,16 @@ export const HeroContentBox = styled.div`
   @media screen and (min-width: 43rem) {
     left: 6rem;
     top: 20rem;
+  }
+
+  @media screen and (min-width: 72rem) {
+    left: 16rem;
+    top: 18rem;
+  }
+
+  @media screen and (min-width: 90rem) {
+    left: 20rem;
+    top: 18rem;
   }
 `;
 
@@ -48,6 +72,17 @@ export const HeroHeading = styled.h1`
   @media screen and (min-width: 35rem) {
     font-size: 6.8rem;
     line-height: 7.2rem;
+  }
+
+  @media screen and (min-width: 60rem) {
+    font-size: 8rem;
+    line-height: 7.6rem;
+    margin-bottom: 1.6rem;
+  }
+
+  @media screen and (min-width: 72rem) {
+    font-size: 9.4rem;
+    line-height: 8rem;
   }
 `;
 
