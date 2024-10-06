@@ -37,7 +37,10 @@ export default function Home() {
           />
         </MainPageImgWrapper>
         <HeroContentBox>
-          <HeroHeading>Project Paramour</HeroHeading>
+          <HeroHeading>
+            Project
+            <br /> Paramour
+          </HeroHeading>
           <HeroText>
             Project made for an art museum near Southwest London. Project
             Paramour is a statement of bold, modern architecture.

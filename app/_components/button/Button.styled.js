@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const ButtonBox = styled.button`
   display: flex;
   align-items: center;
-  width: auto;
   color: #fff;
   background-color: #1b1d23;
   padding: 2rem;
