@@ -8,6 +8,8 @@ import {
   HeroContentBox,
   HeroHeading,
   HeroText,
+  WelcomeWrapper,
+  WelcomeSpan,
 } from "./page.styled";
 import Button from "./_components/button/Button";
 import Link from "next/link";
@@ -48,6 +50,10 @@ export default function Home() {
           </Link>
         </HeroContentBox>
       </HeroWrapper>
+
+      <WelcomeWrapper>
+        <WelcomeSpan>Welcome</WelcomeSpan>
+      </WelcomeWrapper>
     </>
   );
 }

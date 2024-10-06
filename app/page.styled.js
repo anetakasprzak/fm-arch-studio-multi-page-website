@@ -14,7 +14,7 @@ export const MainPageImgWrapper = styled.picture`
   img {
     width: 100%;
     object-fit: cover;
-    height: 61rem;
+    height: 52rem;
   }
 
   @media screen and (min-width: 35rem) {
@@ -100,5 +100,37 @@ export const HeroText = styled.p`
   @media screen and (min-width: 35rem) {
     padding-right: 0rem;
     max-width: 48.9rem;
+  }
+`;
+
+////////////////// WELCOME SECTION //////////////////////
+
+export const WelcomeWrapper = styled.div``;
+
+export const WelcomeSpan = styled.span`
+  display: none;
+
+  @media screen and (min-width: 50rem) {
+    display: block;
+    color: #eeeff4;
+    font-size: 12rem;
+    font-weight: 700;
+    line-height: 20rem;
+    letter-spacing: -3px;
+  }
+
+  @media screen and (min-width: 72rem) {
+    font-size: 20rem;
+    letter-spacing: -5px;
+  }
+
+  @media screen and (min-width: 82rem) {
+    font-size: 22rem;
+    letter-spacing: -5px;
+  }
+
+  @media screen and (min-width: 90rem) {
+    font-size: 24rem;
+    letter-spacing: -5px;
   }
 `;
