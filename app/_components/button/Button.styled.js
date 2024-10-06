@@ -22,4 +22,9 @@ export const ButtonBox = styled.button`
   &:hover {
     background-color: #60636d;
   }
+
+  @media screen and (min-width: 43em) {
+    padding: 2.8rem 3.2rem;
+    gap: 2.6rem;
+  }
 `;

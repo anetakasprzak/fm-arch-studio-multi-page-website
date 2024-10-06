@@ -18,7 +18,7 @@ export default function Home() {
         <MainPageImgWrapper>
           <source
             srcSet="/assets/home/desktop/image-hero-paramour.jpg"
-            media="(min-width: 62em)"
+            media="(min-width: 48em)"
           />
           <source
             srcSet="/assets/home/tablet/image-hero-paramour.jpg"
@@ -32,7 +32,7 @@ export default function Home() {
             src="/assets/home/mobile/image-hero-paramour.jpg"
             alt="hero image"
             width={300}
-            height={560}
+            height={360}
             layout="responsive"
           />
         </MainPageImgWrapper>
