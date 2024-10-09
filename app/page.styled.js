@@ -135,13 +135,13 @@ export const WelcomeSpan = styled.span`
   @media screen and (min-width: 50rem) {
     display: block;
     color: #eeeff4;
-    font-size: 12rem;
+    font-size: 14rem;
     font-weight: 700;
-    line-height: 20rem;
     letter-spacing: -3px;
+    margin-bottom: -2rem;
   }
 
-  @media screen and (min-width: 72rem) {
+  @media screen and (min-width: 60rem) {
     font-size: 20rem;
     letter-spacing: -5px;
   }
@@ -169,10 +169,56 @@ export const WelcomeHeading = styled.h1`
     font-size: 4.8rem;
     line-height: 4.8rem;
   }
+
+  @media screen and (min-width: 43rem) {
+    font-size: 5.8rem;
+    line-height: 6rem;
+  }
+
+  @media screen and (min-width: 50rem) {
+    font-size: 6.4rem;
+    line-height: 6.8rem;
+  }
+
+  @media screen and (min-width: 60rem) {
+    margin-left: 10rem;
+    margin-bottom: 3rem;
+  }
+
+  @media screen and (min-width: 72rem) {
+    margin-left: 12rem;
+    margin-bottom: 4rem;
+  }
+
+  @media screen and (min-width: 82rem) {
+    margin-left: 14rem;
+  }
+
+  @media screen and (min-width: 90rem) {
+    font-size: 7.2rem;
+  }
 `;
 
 export const WelcomeText = styled.p`
   color: #60636d;
   font-weight: 500;
   line-height: 2.4rem;
+
+  @media screen and (min-width: 43rem) {
+    max-width: 62rem;
+  }
+
+  @media screen and (min-width: 60rem) {
+    max-width: 42rem;
+    margin-left: 10rem;
+  }
+
+  @media screen and (min-width: 72rem) {
+    margin-left: 12rem;
+  }
+
+  @media screen and (min-width: 82rem) {
+    max-width: 52rem;
+    margin-left: 14rem;
+  }
 `;
