@@ -222,3 +222,18 @@ export const WelcomeText = styled.p`
     margin-left: 14rem;
   }
 `;
+
+////////////////// ABOUT US SECTION //////////////////////
+
+export const AboutUsWrapper = styled.div`
+  background-color: #60636d;
+  padding: 16.5rem 3rem;
+`;
+
+export const HeadingAboutUs = styled.h1`
+  color: #fff;
+  margin-bottom: 2.2rem;
+  font-size: 4rem;
+  line-height: 5rem;
+  letter-spacing: -1.714px;
+`;

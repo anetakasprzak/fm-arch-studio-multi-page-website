@@ -13,6 +13,8 @@ import {
   WelcomeHeading,
   WelcomeText,
   MobileMiniBorder,
+  AboutUsWrapper,
+  HeadingAboutUs,
 } from "./page.styled";
 import Button from "./_components/button/Button";
 import Link from "next/link";
@@ -77,6 +79,16 @@ export default function Home() {
           test of time.
         </WelcomeText>
       </WelcomeWrapper>
+
+      <AboutUsWrapper>
+        <HeadingAboutUs>
+          Small team,
+          <br /> big ideas
+        </HeadingAboutUs>
+        <Link href="/about">
+          <Button>About Us</Button>
+        </Link>
+      </AboutUsWrapper>
     </>
   );
 }
