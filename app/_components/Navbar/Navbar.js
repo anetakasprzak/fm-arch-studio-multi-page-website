@@ -32,7 +32,7 @@ export default function Navbar() {
       <NavBarWrapper>
         <Link href="/">
           <Image
-            src="/assets/logo.svg"
+            src="/assets/logo-black.svg"
             alt="company logo"
             width={77}
             height={32}
