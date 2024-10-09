@@ -278,7 +278,19 @@ export const HeadingAboutUs = styled.h1`
 ////////////////// FEATURED SECTION //////////////////////
 
 export const FeaturedWrapper = styled.div`
-  padding: 5rem 1.6rem;
+  padding: 5rem 2rem;
+
+  @media screen and (min-width: 35rem) {
+    padding: 12rem 4rem;
+  }
+
+  @media screen and (min-width: 43rem) {
+    padding: 14rem 7rem;
+  }
+
+  @media screen and (min-width: 82rem) {
+    padding: 16rem 10rem;
+  }
 `;
 
 export const FeaturedHeadingBox = styled.div`
@@ -286,6 +298,14 @@ export const FeaturedHeadingBox = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-bottom: 2.8rem;
+
+  @media screen and (min-width: 35rem) {
+    margin-bottom: 4.8rem;
+  }
+
+  @media screen and (min-width: 62rem) {
+    margin-bottom: 7rem;
+  }
 `;
 
 export const FeaturedHeader = styled.h2`
@@ -293,6 +313,18 @@ export const FeaturedHeader = styled.h2`
   font-size: 4rem;
   line-height: 5.2rem;
   letter-spacing: -1.714px;
+
+  @media screen and (min-width: 35rem) {
+    font-size: 4.4rem;
+  }
+
+  @media screen and (min-width: 62rem) {
+    font-size: 6rem;
+  }
+
+  @media screen and (min-width: 72rem) {
+    font-size: 7.2rem;
+  }
 `;
 
 export const FeaturedImgsAndBtnBox = styled.div`
@@ -300,6 +332,23 @@ export const FeaturedImgsAndBtnBox = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+
+  @media screen and (min-width: 35rem) {
+    gap: 3.2rem;
+  }
+
+  @media screen and (min-width: 62rem) {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 72rem) {
+    gap: 4rem;
+  }
+
+  @media screen and (min-width: 82rem) {
+    gap: 7rem;
+  }
 `;
 
 export const DisplayButtonWrapperMobile = styled.div`
