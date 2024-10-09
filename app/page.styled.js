@@ -107,14 +107,22 @@ export const HeroText = styled.p`
 
 export const WelcomeWrapper = styled.div`
   padding: 4rem 3.2rem;
+
+  @media screen and (min-width: 28.5rem) {
+    padding: 5rem 4rem;
+  }
+
+  @media screen and (min-width: 35rem) {
+    padding: 5rem 7rem;
+  }
 `;
 
-export const MobileMiniBorder = styled.span`
-  border-bottom: 5px solid #c8ccd8;
-  width: 100%;
-  /* height: 5px;
-  width: 6.5rem; */
-`;
+// export const MobileMiniBorder = styled.span`
+//   border-bottom: 5px solid #c8ccd8;
+//   width: 100%;
+//   /* height: 5px;
+//   width: 6.5rem; */
+// `;
 
 export const WelcomeSpan = styled.span`
   display: none;
@@ -144,6 +152,22 @@ export const WelcomeSpan = styled.span`
   }
 `;
 
-export const WelcomeHeading = styled.h1``;
+export const WelcomeHeading = styled.h1`
+  color: #1b1d23;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4rem;
+  letter-spacing: -1.714px;
+  margin-bottom: 2rem;
 
-export const WelcomeText = styled.p``;
+  @media screen and (min-width: 28.5rem) {
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+  }
+`;
+
+export const WelcomeText = styled.p`
+  color: #60636d;
+  font-weight: 500;
+  line-height: 2.4rem;
+`;

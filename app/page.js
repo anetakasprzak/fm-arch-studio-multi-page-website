@@ -55,9 +55,12 @@ export default function Home() {
       </HeroWrapper>
 
       <WelcomeWrapper>
-        <MobileMiniBorder />
+        {/* <MobileMiniBorder /> */}
         <WelcomeSpan>Welcome</WelcomeSpan>
-        <WelcomeHeading>Welcome to Arch Studio</WelcomeHeading>
+        <WelcomeHeading>
+          Welcome to <br />
+          Arch Studio
+        </WelcomeHeading>
         <WelcomeText>
           We have a unique network and skillset to help bring your projects to
           life. Our small team of highly skilled individuals combined with our
