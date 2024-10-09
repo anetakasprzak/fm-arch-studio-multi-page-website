@@ -38,6 +38,11 @@ export const HeroContentBox = styled.div`
 
   @media screen and (min-width: 28.5rem) {
     left: 4rem;
+    top: 10rem;
+  }
+
+  @media screen and (min-width: 35rem) {
+    left: 6rem;
     top: 16rem;
   }
 
