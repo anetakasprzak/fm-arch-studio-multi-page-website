@@ -228,6 +228,27 @@ export const WelcomeText = styled.p`
 export const AboutUsWrapper = styled.div`
   background-color: #60636d;
   padding: 16.5rem 3rem;
+
+  @media screen and (min-width: 28.5rem) {
+    margin: 0 4rem;
+    margin-top: 3rem;
+    padding: 12rem 5rem;
+  }
+
+  @media screen and (min-width: 43rem) {
+    margin: 0 6rem;
+    margin-top: 6rem;
+    padding: 14rem 7rem;
+  }
+
+  @media screen and (min-width: 60rem) {
+    padding: 16rem 10rem;
+  }
+
+  @media screen and (min-width: 90rem) {
+    margin: 0 8rem;
+    margin-top: 10rem;
+  }
 `;
 
 export const HeadingAboutUs = styled.h1`
@@ -236,4 +257,20 @@ export const HeadingAboutUs = styled.h1`
   font-size: 4rem;
   line-height: 5rem;
   letter-spacing: -1.714px;
+
+  @media screen and (min-width: 28.5rem) {
+    font-size: 4.8rem;
+  }
+
+  @media screen and (min-width: 35rem) {
+    font-size: 5.4rem;
+    line-height: 6rem;
+    margin-bottom: 4rem;
+  }
+
+  @media screen and (min-width: 60rem) {
+    font-size: 7.2rem;
+    line-height: 6.4rem;
+    letter-spacing: -2px;
+  }
 `;
