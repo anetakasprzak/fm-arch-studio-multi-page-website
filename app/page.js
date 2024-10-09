@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import Image from "next/image";
+import { portfolioData } from "@/app/data";
 import {
   HeroWrapper,
   MainPageImgWrapper,
@@ -15,9 +15,14 @@ import {
   MobileMiniBorder,
   AboutUsWrapper,
   HeadingAboutUs,
+  FeaturedWrapper,
+  FeaturedHeadingBox,
+  FeaturedHeader,
+  DisplayButtonWrapper,
 } from "./page.styled";
-import Button from "./_components/button/Button";
+import Button from "./_components/Button/Button";
 import Link from "next/link";
+import { PortfolioElement } from "./(root)/portfolio/page";
 
 export default function Home() {
   return (
@@ -89,6 +94,22 @@ export default function Home() {
           <Button>About Us</Button>
         </Link>
       </AboutUsWrapper>
+
+      <FeaturedWrapper>
+        <FeaturedHeadingBox>
+          <FeaturedHeader>Featured</FeaturedHeader>
+          <DisplayButtonWrapper>
+            <Link href="/portfolio">
+              <Button>See All</Button>
+            </Link>
+          </DisplayButtonWrapper>
+        </FeaturedHeadingBox>
+        <div>
+          {portfolioData.map((obj) => {
+            return <PortfolioElement key={obj.id} obj={obj} />;
+          })}
+        </div>
+      </FeaturedWrapper>
     </>
   );
 }

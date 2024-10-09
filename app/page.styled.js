@@ -274,3 +274,23 @@ export const HeadingAboutUs = styled.h1`
     letter-spacing: -2px;
   }
 `;
+
+////////////////// FEATURED SECTION //////////////////////
+
+export const FeaturedWrapper = styled.div``;
+
+export const FeaturedHeadingBox = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+export const FeaturedHeader = styled.h2``;
+
+export const DisplayButtonWrapper = styled.div`
+  display: none;
+
+  @media screen and (min-width: 28.5rem) {
+    display: block;
+  }
+`;
