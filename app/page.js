@@ -19,6 +19,8 @@ import {
   FeaturedHeadingBox,
   FeaturedHeader,
   DisplayButtonWrapperTop,
+  DisplayButtonWrapperMobile,
+  FeaturedImgsAndBtnBox,
 } from "./page.styled";
 import Button from "./_components/Button/Button";
 import Link from "next/link";
@@ -104,11 +106,16 @@ export default function Home() {
             </Link>
           </DisplayButtonWrapperTop>
         </FeaturedHeadingBox>
-        <div>
-          {portfolioData.slice(4, 7).map((obj) => {
+        <FeaturedImgsAndBtnBox>
+          {portfolioData.slice(7, 10).map((obj) => {
             return <PortfolioElement key={obj.id} obj={obj} />;
           })}
-        </div>
+          <DisplayButtonWrapperMobile>
+            <Link href="/portfolio">
+              <Button>See All</Button>
+            </Link>
+          </DisplayButtonWrapperMobile>
+        </FeaturedImgsAndBtnBox>
       </FeaturedWrapper>
     </>
   );

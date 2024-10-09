@@ -277,15 +277,36 @@ export const HeadingAboutUs = styled.h1`
 
 ////////////////// FEATURED SECTION //////////////////////
 
-export const FeaturedWrapper = styled.div``;
+export const FeaturedWrapper = styled.div`
+  padding: 5rem 1.6rem;
+`;
 
 export const FeaturedHeadingBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 2.8rem;
 `;
 
-export const FeaturedHeader = styled.h2``;
+export const FeaturedHeader = styled.h2`
+  color: #1b1d23;
+  font-size: 4rem;
+  line-height: 5.2rem;
+  letter-spacing: -1.714px;
+`;
+
+export const FeaturedImgsAndBtnBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+`;
+
+export const DisplayButtonWrapperMobile = styled.div`
+  @media screen and (min-width: 28.5rem) {
+    display: none;
+  }
+`;
 
 export const DisplayButtonWrapperTop = styled.div`
   display: none;
