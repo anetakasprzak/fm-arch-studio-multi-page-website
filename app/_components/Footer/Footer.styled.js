@@ -80,6 +80,13 @@ export const FooterLink = styled.li`
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 2.5rem;
+    transition: all 0.3s;
+  }
+
+  @media screen and (min-width: 50em) {
+    a:hover {
+      color: #000;
+    }
   }
 `;
 
