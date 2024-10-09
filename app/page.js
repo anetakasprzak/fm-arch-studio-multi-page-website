@@ -18,11 +18,11 @@ import {
   FeaturedWrapper,
   FeaturedHeadingBox,
   FeaturedHeader,
-  DisplayButtonWrapper,
+  DisplayButtonWrapperTop,
 } from "./page.styled";
 import Button from "./_components/Button/Button";
 import Link from "next/link";
-import { PortfolioElement } from "./(root)/portfolio/page";
+import PortfolioElement from "./_components/PortfolioEl/PortfolioEl";
 
 export default function Home() {
   return (
@@ -98,14 +98,14 @@ export default function Home() {
       <FeaturedWrapper>
         <FeaturedHeadingBox>
           <FeaturedHeader>Featured</FeaturedHeader>
-          <DisplayButtonWrapper>
+          <DisplayButtonWrapperTop>
             <Link href="/portfolio">
               <Button>See All</Button>
             </Link>
-          </DisplayButtonWrapper>
+          </DisplayButtonWrapperTop>
         </FeaturedHeadingBox>
         <div>
-          {portfolioData.map((obj) => {
+          {portfolioData.slice(4, 7).map((obj) => {
             return <PortfolioElement key={obj.id} obj={obj} />;
           })}
         </div>

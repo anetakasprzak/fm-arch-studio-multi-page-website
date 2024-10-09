@@ -31,4 +31,4 @@ const PortfolioElement = ({ obj }) => {
   );
 };
 
-export { PortfolioElement };
+export default PortfolioElement;

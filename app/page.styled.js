@@ -287,7 +287,7 @@ export const FeaturedHeadingBox = styled.div`
 
 export const FeaturedHeader = styled.h2``;
 
-export const DisplayButtonWrapper = styled.div`
+export const DisplayButtonWrapperTop = styled.div`
   display: none;
 
   @media screen and (min-width: 28.5rem) {
