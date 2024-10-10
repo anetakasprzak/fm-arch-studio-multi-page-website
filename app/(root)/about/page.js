@@ -1,7 +1,14 @@
 "use client";
 
 import "./page.styled";
-import { AboutHeroImageWrapper, AboutHeroWrapper } from "./page.styled";
+import {
+  AboutHeroImageWrapper,
+  AboutHeroWrapper,
+  HeroTextBox,
+  AboutSpan,
+  HeroHeading,
+  HeroAboutText,
+} from "./page.styled";
 
 const AboutPage = () => {
   return (
@@ -13,7 +20,7 @@ const AboutPage = () => {
         />
         <source
           srcSet="/assets/about/tablet/image-hero.jpg"
-          media="(min-width: 34.5em)"
+          media="(min-width: 35em)"
         />
         <source
           srcSet="/assets/about/mobile/image-hero.jpg"
@@ -21,6 +28,20 @@ const AboutPage = () => {
         />
         <img src="/assets/about/mobile/image-hero.jpg" alt="hero image" />
       </AboutHeroImageWrapper>
+
+      <HeroTextBox>
+        <AboutSpan>About</AboutSpan>
+        <HeroHeading>
+          Your team of
+          <br /> professionals
+        </HeroHeading>
+        <HeroAboutText>
+          Our small team of world-class professionals will work with you every
+          step of the way. Strong relationships are at the core of everything we
+          do. This extends to the relationship our projects have with their
+          surroundings.
+        </HeroAboutText>
+      </HeroTextBox>
     </AboutHeroWrapper>
   );
 };
