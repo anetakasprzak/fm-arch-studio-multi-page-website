@@ -147,3 +147,22 @@ export const HeroAboutText = styled.p`
   color: #60636d;
   line-height: 2.4rem;
 `;
+
+///////////////// OUR HERITAGE ///////////////////
+
+export const HeritageSection = styled.section`
+  margin-top: 5rem;
+  padding: 0 3rem;
+`;
+
+export const HeritageHeading = styled.h2`
+  color: #1b1d23;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  margin-bottom: 2rem;
+`;
+
+export const HeritageText = styled.p`
+  color: #60636d;
+  line-height: 2.4rem;
+`;
