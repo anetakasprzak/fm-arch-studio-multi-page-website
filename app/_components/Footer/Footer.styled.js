@@ -34,6 +34,7 @@ export const LogoWrapper = styled.div`
   place-content: center;
   margin-top: -5rem;
   z-index: 10;
+  cursor: pointer;
 
   @media screen and (min-width: 50em) {
     margin-top: 0rem;

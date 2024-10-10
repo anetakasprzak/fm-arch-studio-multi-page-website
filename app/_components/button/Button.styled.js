@@ -20,7 +20,7 @@ export const ButtonBox = styled.button`
   }
 
   &:hover {
-    background-color: #60636d;
+    background-color: #7d828f;
   }
 
   @media screen and (min-width: 43em) {

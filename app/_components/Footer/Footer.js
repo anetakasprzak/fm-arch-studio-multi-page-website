@@ -14,16 +14,16 @@ import Button from "../Button/Button";
 export const Footer = () => {
   return (
     <FooterBox>
-      <LogoWrapper>
-        <Link href="/">
+      <Link href="/">
+        <LogoWrapper>
           <Image
             src="/assets/logo-white.svg"
             alt="company logo"
             width={60}
             height={32}
           />
-        </Link>
-      </LogoWrapper>
+        </LogoWrapper>
+      </Link>
       <FooterLinksBox>
         <FooterLink>
           <Link href="/portfolio">Portfolio</Link>
@@ -36,7 +36,9 @@ export const Footer = () => {
         </FooterLink>
       </FooterLinksBox>
       <ButtonWrapper>
-        <Button>See Our Portfolio</Button>
+        <Link href="/portfolio">
+          <Button>See Our Portfolio</Button>
+        </Link>
       </ButtonWrapper>
     </FooterBox>
   );
