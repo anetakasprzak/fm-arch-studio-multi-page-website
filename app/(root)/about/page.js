@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import "./page.styled";
 import {
   AboutHeroImageWrapper,
@@ -11,7 +12,16 @@ import {
   HeritageHeading,
   HeritageSection,
   HeritageText,
+  LeaderElementWrapper,
+  TextBox,
+  LeaderName,
+  LeaderJob,
+  LeadersSection,
+  LeadersHeading,
+  LeadersWrapper,
+  LeaderImgWrapper,
 } from "./page.styled";
+import { leadersData } from "@/app/data";
 
 const AboutPage = () => {
   return (
@@ -70,7 +80,41 @@ const AboutPage = () => {
           project.
         </HeritageText>
       </HeritageSection>
+
+      <LeadersSection>
+        <LeadersHeading>
+          The
+          <br />
+          Leaders
+        </LeadersHeading>
+        <LeadersWrapper>
+          {leadersData.map((obj) => {
+            return <LeaderEl key={obj.id} obj={obj} />;
+          })}
+        </LeadersWrapper>
+      </LeadersSection>
     </>
+  );
+};
+
+const LeaderEl = ({ obj }) => {
+  const { name, jobTitle, image } = obj;
+  return (
+    <LeaderElementWrapper>
+      <LeaderImgWrapper>
+        <Image
+          src={image}
+          alt="leader image"
+          width={311}
+          height={284}
+          layout="responsive"
+        />
+      </LeaderImgWrapper>
+      <TextBox>
+        <LeaderName>{name}</LeaderName>
+        <LeaderJob>{jobTitle}</LeaderJob>
+      </TextBox>
+    </LeaderElementWrapper>
   );
 };
 

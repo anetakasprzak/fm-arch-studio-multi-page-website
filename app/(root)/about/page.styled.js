@@ -174,3 +174,14 @@ export const HeritageText = styled.p`
   color: #60636d;
   line-height: 2.4rem;
 `;
+
+///////////////// THE LEADERS ///////////////////
+
+export const LeadersSection = styled.section``;
+export const LeadersHeading = styled.h2``;
+export const LeadersWrapper = styled.div``;
+export const LeaderElementWrapper = styled.div``;
+export const TextBox = styled.div``;
+export const LeaderName = styled.h4``;
+export const LeaderJob = styled.span``;
+export const LeaderImgWrapper = styled.div``;
