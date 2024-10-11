@@ -157,6 +157,10 @@ export const HeritageSection = styled.section`
   @media screen and (min-width: 23.5em) {
     padding: 0 5rem;
   }
+
+  @media screen and (min-width: 90em) {
+    padding: 8rem 12rem;
+  }
 `;
 
 export const HeritageHeading = styled.h2`
@@ -189,6 +193,15 @@ export const LeadersSection = styled.section`
   @media screen and (min-width: 62em) {
     flex-direction: row;
     gap: 10rem;
+    margin-top: 4rem;
+  }
+
+  @media screen and (min-width: 72em) {
+    gap: 14rem;
+  }
+
+  @media screen and (min-width: 90em) {
+    padding: 8rem 12rem;
   }
 `;
 
@@ -212,6 +225,15 @@ export const LeadersWrapper = styled.div`
   @media screen and (min-width: 35em) {
     grid-template-columns: 1fr 1fr;
     column-gap: 1rem;
+  }
+
+  @media screen and (min-width: 62em) {
+    column-gap: 4rem;
+  }
+
+  @media screen and (min-width: 72em) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 9rem;
   }
 `;
 
