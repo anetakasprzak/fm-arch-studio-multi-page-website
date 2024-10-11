@@ -177,11 +177,54 @@ export const HeritageText = styled.p`
 
 ///////////////// THE LEADERS ///////////////////
 
-export const LeadersSection = styled.section``;
+export const LeadersSection = styled.section`
+  padding: 6rem 3rem;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 62em) {
+    flex-direction: row;
+    gap: 6rem;
+  }
+`;
+
 export const LeadersHeading = styled.h2``;
-export const LeadersWrapper = styled.div``;
+
+export const LeadersWrapper = styled.div`
+  display: grid;
+  place-items: center;
+  row-gap: 2rem;
+
+  @media screen and (min-width: 35em) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+  }
+`;
+
+export const LeaderImgWrapper = styled.div`
+  width: 25rem;
+  height: 22.8rem;
+
+  @media screen and (min-width: 28.5em) {
+    width: 31.1rem;
+    height: 28.4rem;
+  }
+
+  @media screen and (min-width: 35em) {
+    width: 25rem;
+    height: 22.8rem;
+  }
+
+  @media screen and (min-width: 43em) {
+    width: 31.1rem;
+    height: 28.4rem;
+  }
+`;
+
 export const LeaderElementWrapper = styled.div``;
+
 export const TextBox = styled.div``;
+
 export const LeaderName = styled.h4``;
+
 export const LeaderJob = styled.span``;
-export const LeaderImgWrapper = styled.div``;
