@@ -154,7 +154,7 @@ export const HeritageSection = styled.section`
   margin-top: 5rem;
   padding: 0 3rem;
 
-  @media screen and (min-width: 23.4em) {
+  @media screen and (min-width: 23.5em) {
     padding: 0 5rem;
   }
 `;
@@ -178,22 +178,36 @@ export const HeritageText = styled.p`
 ///////////////// THE LEADERS ///////////////////
 
 export const LeadersSection = styled.section`
-  padding: 6rem 3rem;
+  padding: 8rem 3rem;
   display: flex;
   flex-direction: column;
 
+  @media screen and (min-width: 23.5em) {
+    padding: 8rem 5rem;
+  }
+
   @media screen and (min-width: 62em) {
     flex-direction: row;
-    gap: 6rem;
+    gap: 10rem;
   }
 `;
 
-export const LeadersHeading = styled.h2``;
+export const LeadersHeading = styled.h2`
+  margin-bottom: 3rem;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  margin-bottom: 3rem;
+
+  @media screen and (min-width: 28.5em) {
+    font-size: 3.6rem;
+    margin-bottom: 4rem;
+  }
+`;
 
 export const LeadersWrapper = styled.div`
   display: grid;
   place-items: center;
-  row-gap: 2rem;
+  row-gap: 3rem;
 
   @media screen and (min-width: 35em) {
     grid-template-columns: 1fr 1fr;
@@ -211,7 +225,7 @@ export const LeaderImgWrapper = styled.div`
   }
 
   @media screen and (min-width: 35em) {
-    width: 25rem;
+    width: 24rem;
     height: 22.8rem;
   }
 
@@ -223,8 +237,26 @@ export const LeaderImgWrapper = styled.div`
 
 export const LeaderElementWrapper = styled.div``;
 
-export const TextBox = styled.div``;
+export const TextBox = styled.div`
+  color: #1b1d23;
+`;
 
-export const LeaderName = styled.h4``;
+export const LeaderName = styled.h4`
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 4rem;
 
-export const LeaderJob = styled.span``;
+  @media screen and (min-width: 28.5em) {
+    font-size: 3.2rem;
+  }
+
+  @media screen and (min-width: 35em) {
+    font-size: 2.8rem;
+  }
+`;
+
+export const LeaderJob = styled.span`
+  font-size: 1.8rem;
+  line-height: 2rem;
+  opacity: 0.75;
+`;
