@@ -153,6 +153,10 @@ export const HeroAboutText = styled.p`
 export const HeritageSection = styled.section`
   margin-top: 5rem;
   padding: 0 3rem;
+
+  @media screen and (min-width: 23.4em) {
+    padding: 0 5rem;
+  }
 `;
 
 export const HeritageHeading = styled.h2`
@@ -160,6 +164,10 @@ export const HeritageHeading = styled.h2`
   font-size: 3.2rem;
   line-height: 4rem;
   margin-bottom: 2rem;
+
+  @media screen and (min-width: 28.5em) {
+    font-size: 3.6rem;
+  }
 `;
 
 export const HeritageText = styled.p`
