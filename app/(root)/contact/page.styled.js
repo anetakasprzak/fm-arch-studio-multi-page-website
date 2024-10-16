@@ -2,7 +2,9 @@ import styled from "styled-components";
 
 export const ContactHeroWrapper = styled.div``;
 
-export const ContactHeroImageWrapper = styled.picture``;
+export const ContactHeroImageWrapper = styled.picture`
+  filter: brightness(0.6);
+`;
 
 export const HeroTextBox = styled.div`
   position: relative;
