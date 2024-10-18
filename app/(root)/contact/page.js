@@ -31,7 +31,7 @@ const ContactPage = () => {
         </ContactHeroImageWrapper>
 
         <HeroTextBox>
-          <ContactSpan>About</ContactSpan>
+          <ContactSpan>Contact</ContactSpan>
           <HeroHeading>
             Tell us about
             <br /> your project
