@@ -159,23 +159,35 @@ export const ContactSection = styled.section`
   padding: 3.2rem;
 `;
 
+export const InputWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+`;
+
 export const TextInput = styled.input`
   all: unset;
   height: 4.4rem;
-  border-bottom: 1px solid #1b1d23;
+  border-bottom: ${(props) =>
+    props.hasError ? "1px solid #df5656" : "1px solid #1b1d23"};
 
   &::placeholder {
-    color: #c8ccd8;
+    opacity: ${(props) => (props.hasError ? 0.5 : 1)};
+    color: ${(props) => (props.hasError ? "#df5656" : "#c8ccd8")};
   }
 `;
 
 export const Textarea = styled.textarea`
   all: unset;
   height: 9.2rem;
-  border-bottom: 1px solid #1b1d23;
+  border-bottom: ${(props) =>
+    props.hasError ? "1px solid #df5656" : "1px solid #1b1d23"};
 
   &::placeholder {
-    color: #c8ccd8;
+    opacity: ${(props) => (props.hasError ? 0.5 : 1)};
+    color: ${(props) => (props.hasError ? "#df5656" : "#c8ccd8")};
   }
 `;
 
@@ -184,7 +196,15 @@ export const FormButton = styled.button`
   width: 8rem;
   height: 8rem;
   background: #1b1d23 url("/assets/icons/icon-arrow.svg") no-repeat center;
+  margin-left: auto;
   position: absolute;
   bottom: -8rem;
+  right: 0;
+`;
+
+export const Error = styled.span`
+  color: #df5656;
+  position: absolute;
+  bottom: 1rem;
   right: 0;
 `;

@@ -11,11 +11,29 @@ import {
   HeroContactText,
   HeroHeading,
   HeroTextBox,
+  InputWrapper,
   Textarea,
   TextInput,
+  Error,
 } from "./page.styled";
+import { useForm } from "react-hook-form";
 
 const ContactPage = () => {
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm({
+    defaultValues: {
+      name: "",
+      email: "",
+      message: "",
+    },
+  });
+
+  const onSubmit = (data) => console.log(data);
+
   return (
     <>
       <ContactHeroWrapper>
@@ -49,11 +67,39 @@ const ContactPage = () => {
         </HeroTextBox>
       </ContactHeroWrapper>
       <ContactSection>
-        <h1>Connect with us</h1>
-        <Form>
-          <TextInput type="text" placeholder="Name" />
-          <TextInput type="text" placeholder="Email" />
-          <Textarea placeholder="Message" />
+        <HeroHeading>Connect with us</HeroHeading>
+        <Form onSubmit={handleSubmit(onSubmit)}>
+          <InputWrapper>
+            <TextInput
+              type="text"
+              placeholder="Name"
+              hasError={errors.name}
+              {...register("name", { required: "Can't be empty" })}
+            />
+            {errors.name && <Error>{errors.name.message}</Error>}
+          </InputWrapper>
+
+          <InputWrapper>
+            <TextInput
+              type="email"
+              placeholder="Email"
+              hasError={errors.email}
+              {...register("email", {
+                required: "Can't be empty",
+              })}
+            />
+            {errors.email && <Error>{errors.email.message}</Error>}
+          </InputWrapper>
+
+          <InputWrapper>
+            <Textarea
+              hasError={errors.message}
+              placeholder="Message"
+              {...register("message", { required: "Can't be empty" })}
+            />
+            {errors.message && <Error>{errors.message.message}</Error>}
+          </InputWrapper>
+
           <FormButton type="submit" />
         </Form>
       </ContactSection>
