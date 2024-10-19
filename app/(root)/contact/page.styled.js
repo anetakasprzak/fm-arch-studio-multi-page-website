@@ -26,7 +26,7 @@ export const HeroTextBox = styled.div`
   max-width: 90%;
   place-self: start;
 
-  @media screen and (min-width: 23.4em) {
+  @media screen and (min-width: 23.5em) {
     padding: 4rem 2rem 3rem 5rem;
     max-width: 85%;
   }
@@ -151,7 +151,31 @@ export const HeroContactText = styled.p`
 
 ////////////////  CONTACT DETAILS ///////////////////
 
-export const ContactDetailsSection = styled.section``;
+export const ContactDetailsSection = styled.section`
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 23.5em) {
+    padding: 4rem 5rem;
+  }
+
+  @media screen and (min-width: 28.5em) {
+    padding: 6rem 9rem;
+  }
+
+  @media screen and (min-width: 50em) {
+    padding: 8rem 10rem;
+  }
+
+  @media screen and (min-width: 55em) {
+    padding: 8rem 12rem;
+  }
+
+  @media screen and (min-width: 62em) {
+    flex-direction: row;
+  }
+`;
 
 export const HeadingContactDetails = styled.h2``;
 
@@ -170,6 +194,7 @@ export const OfficePhone = styled.p``;
 ////////////////  MAP IMG ///////////////////
 
 export const MapSection = styled.div``;
+
 export const MapImgWrapper = styled.picture``;
 
 ////////////////  CONTACT FORM ///////////////////
