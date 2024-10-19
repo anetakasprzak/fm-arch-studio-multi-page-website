@@ -17,12 +17,9 @@ import {
   Error,
   ContactDetailsSection,
   HeadingContactDetails,
-  MainOfficeBox,
+  OfficeBox,
   OfficeHeading,
-  OfficeEmail,
-  OfficeAddress,
-  OfficePhone,
-  IIOfficeBox,
+  OfficeText,
   MapSection,
   MapImgWrapper,
 } from "./page.styled";
@@ -84,19 +81,19 @@ const ContactPage = () => {
           Details
         </HeadingContactDetails>
 
-        <MainOfficeBox>
+        <OfficeBox>
           <OfficeHeading>Main Office</OfficeHeading>
-          <OfficeEmail>Mail : archone@mail.com</OfficeEmail>
-          <OfficeAddress>Address : 1892 Chenoweth Drive TN</OfficeAddress>
-          <OfficePhone>Phone : 123-456-3451</OfficePhone>
-        </MainOfficeBox>
+          <OfficeText>Mail : archone@mail.com</OfficeText>
+          <OfficeText>Address : 1892 Chenoweth Drive TN</OfficeText>
+          <OfficeText>Phone : 123-456-3451</OfficeText>
+        </OfficeBox>
 
-        <IIOfficeBox>
+        <OfficeBox>
           <OfficeHeading>Office II</OfficeHeading>
-          <OfficeEmail>Mail : archtwo@mail.com</OfficeEmail>
-          <OfficeAddress>Address : 3399 Wines Lane TX</OfficeAddress>
-          <OfficePhone>Phone : 832-123-4321</OfficePhone>
-        </IIOfficeBox>
+          <OfficeText>Mail : archtwo@mail.com</OfficeText>
+          <OfficeText>Address : 3399 Wines Lane TX</OfficeText>
+          <OfficeText>Phone : 832-123-4321</OfficeText>
+        </OfficeBox>
       </ContactDetailsSection>
 
       <MapSection>

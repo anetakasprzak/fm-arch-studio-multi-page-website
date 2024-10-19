@@ -155,6 +155,8 @@ export const ContactDetailsSection = styled.section`
   padding: 4rem 3rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 3rem;
 
   @media screen and (min-width: 23.5em) {
     padding: 4rem 5rem;
@@ -174,22 +176,64 @@ export const ContactDetailsSection = styled.section`
 
   @media screen and (min-width: 62em) {
     flex-direction: row;
+    padding: 10rem 7rem;
+  }
+
+  @media screen and (min-width: 72em) {
+    gap: 10rem;
+  }
+
+  @media screen and (min-width: 90em) {
+    padding: 10rem 12rem;
   }
 `;
 
-export const HeadingContactDetails = styled.h2``;
+export const HeadingContactDetails = styled.h2`
+  color: #1b1d23;
+  font-size: 3.2rem;
+  line-height: 4rem;
 
-export const MainOfficeBox = styled.div``;
+  @media screen and (min-width: 28.5em) {
+    font-size: 3.6rem;
+  }
 
-export const IIOfficeBox = styled.div``;
+  @media screen and (min-width: 35em) {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
 
-export const OfficeHeading = styled.h4``;
+  @media screen and (min-width: 43em) {
+    font-size: 6.4rem;
+    margin-bottom: 1.6rem;
+  }
 
-export const OfficeEmail = styled.p``;
+  @media screen and (min-width: 62em) {
+    font-size: 7.2rem;
+    line-height: 7rem;
+    margin-bottom: 5rem;
+  }
 
-export const OfficeAddress = styled.p``;
+  @media screen and (min-width: 90em) {
+    font-size: 7.4rem;
+  }
+`;
 
-export const OfficePhone = styled.p``;
+export const OfficeBox = styled.div`
+  color: #60636d;
+  font-size: 1.8rem;
+`;
+
+export const OfficeHeading = styled.h4`
+  margin-bottom: 0.4rem;
+  font-weight: 700;
+  line-height: 3.5rem;
+`;
+
+export const OfficeText = styled.p`
+  font-weight: 500;
+  line-height: 2.4rem;
+  margin-bottom: 0.2rem;
+`;
 
 ////////////////  MAP IMG ///////////////////
 
