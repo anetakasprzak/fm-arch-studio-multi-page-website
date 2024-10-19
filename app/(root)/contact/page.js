@@ -23,6 +23,8 @@ import {
   OfficeAddress,
   OfficePhone,
   IIOfficeBox,
+  MapSection,
+  MapImgWrapper,
 } from "./page.styled";
 import { useForm } from "react-hook-form";
 
@@ -96,6 +98,24 @@ const ContactPage = () => {
           <OfficePhone>Phone : 832-123-4321</OfficePhone>
         </IIOfficeBox>
       </ContactDetailsSection>
+
+      <MapSection>
+        <MapImgWrapper>
+          <source
+            srcSet="/assets/contact/desktop/image-map.png"
+            media="(min-width: 48em)"
+          />
+          <source
+            srcSet="/assets/contact/tablet/image-map.png"
+            media="(min-width: 35em)"
+          />
+          <source
+            srcSet="/assets/contact/mobile/image-map.png"
+            media="(min-width: 15em)"
+          />
+          <img src="/assets/contact/mobile/image-map.png" alt="map image" />
+        </MapImgWrapper>
+      </MapSection>
 
       <ContactFormSection>
         <HeroHeading>Connect with us</HeroHeading>

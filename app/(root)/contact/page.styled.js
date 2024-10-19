@@ -167,6 +167,11 @@ export const OfficeAddress = styled.p``;
 
 export const OfficePhone = styled.p``;
 
+////////////////  MAP IMG ///////////////////
+
+export const MapSection = styled.div``;
+export const MapImgWrapper = styled.picture``;
+
 ////////////////  CONTACT FORM ///////////////////
 
 export const ContactFormSection = styled.section`
