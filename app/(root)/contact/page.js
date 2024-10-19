@@ -4,7 +4,7 @@ import "./page.styled";
 import {
   ContactHeroImageWrapper,
   ContactHeroWrapper,
-  ContactSection,
+  ContactFormSection,
   ContactSpan,
   Form,
   FormButton,
@@ -15,6 +15,14 @@ import {
   Textarea,
   TextInput,
   Error,
+  ContactDetailsSection,
+  HeadingContactDetails,
+  MainOfficeBox,
+  OfficeHeading,
+  OfficeEmail,
+  OfficeAddress,
+  OfficePhone,
+  IIOfficeBox,
 } from "./page.styled";
 import { useForm } from "react-hook-form";
 
@@ -66,7 +74,30 @@ const ContactPage = () => {
           </HeroContactText>
         </HeroTextBox>
       </ContactHeroWrapper>
-      <ContactSection>
+
+      <ContactDetailsSection>
+        <HeadingContactDetails>
+          Contact
+          <br />
+          Details
+        </HeadingContactDetails>
+
+        <MainOfficeBox>
+          <OfficeHeading>Main Office</OfficeHeading>
+          <OfficeEmail>Mail : archone@mail.com</OfficeEmail>
+          <OfficeAddress>Address : 1892 Chenoweth Drive TN</OfficeAddress>
+          <OfficePhone>Phone : 123-456-3451</OfficePhone>
+        </MainOfficeBox>
+
+        <IIOfficeBox>
+          <OfficeHeading>Office II</OfficeHeading>
+          <OfficeEmail>Mail : archtwo@mail.com</OfficeEmail>
+          <OfficeAddress>Address : 3399 Wines Lane TX</OfficeAddress>
+          <OfficePhone>Phone : 832-123-4321</OfficePhone>
+        </IIOfficeBox>
+      </ContactDetailsSection>
+
+      <ContactFormSection>
         <HeroHeading>Connect with us</HeroHeading>
         <Form onSubmit={handleSubmit(onSubmit)}>
           <InputWrapper>
@@ -102,7 +133,7 @@ const ContactPage = () => {
 
           <FormButton type="submit" />
         </Form>
-      </ContactSection>
+      </ContactFormSection>
     </>
   );
 };

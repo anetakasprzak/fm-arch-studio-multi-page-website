@@ -149,15 +149,35 @@ export const HeroContactText = styled.p`
   line-height: 2.4rem;
 `;
 
+////////////////  CONTACT DETAILS ///////////////////
+
+export const ContactDetailsSection = styled.section``;
+
+export const HeadingContactDetails = styled.h2``;
+
+export const MainOfficeBox = styled.div``;
+
+export const IIOfficeBox = styled.div``;
+
+export const OfficeHeading = styled.h4``;
+
+export const OfficeEmail = styled.p``;
+
+export const OfficeAddress = styled.p``;
+
+export const OfficePhone = styled.p``;
+
+////////////////  CONTACT FORM ///////////////////
+
+export const ContactFormSection = styled.section`
+  padding: 3.2rem;
+`;
+
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
   gap: 4.3rem;
   position: relative;
-`;
-
-export const ContactSection = styled.section`
-  padding: 3.2rem;
 `;
 
 export const InputWrapper = styled.div`
