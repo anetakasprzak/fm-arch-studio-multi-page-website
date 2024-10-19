@@ -90,6 +90,11 @@ export const ContactSpan = styled.span`
 
     position: absolute;
     top: -7rem;
+    left: -1rem;
+  }
+
+  @media screen and (min-width: 43em) {
+    left: 0;
   }
 
   @media screen and (min-width: 62em) {
@@ -97,14 +102,10 @@ export const ContactSpan = styled.span`
     top: -14rem;
   }
 
-  @media screen and (min-width: 82em) {
-    left: 0;
-  }
-
   @media screen and (min-width: 90em) {
     left: 6rem;
     top: -16rem;
-    font-size: 25rem;
+    font-size: 23rem;
   }
 `;
 
