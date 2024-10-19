@@ -115,7 +115,10 @@ const ContactPage = () => {
       </MapSection>
 
       <ContactFormSection>
-        <HeroHeading>Connect with us</HeroHeading>
+        <HeroHeading>
+          Connect
+          <br /> with us
+        </HeroHeading>
         <Form onSubmit={handleSubmit(onSubmit)}>
           <InputWrapper>
             <TextInput

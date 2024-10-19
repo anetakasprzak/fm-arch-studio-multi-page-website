@@ -155,7 +155,7 @@ export const ContactDetailsSection = styled.section`
   padding: 4rem 3rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+
   gap: 3rem;
 
   @media screen and (min-width: 23.5em) {
@@ -176,6 +176,7 @@ export const ContactDetailsSection = styled.section`
 
   @media screen and (min-width: 62em) {
     flex-direction: row;
+    align-items: center;
     padding: 10rem 7rem;
   }
 
@@ -210,7 +211,6 @@ export const HeadingContactDetails = styled.h2`
   @media screen and (min-width: 62em) {
     font-size: 7.2rem;
     line-height: 7rem;
-    margin-bottom: 5rem;
   }
 
   @media screen and (min-width: 90em) {
@@ -237,7 +237,19 @@ export const OfficeText = styled.p`
 
 ////////////////  MAP IMG ///////////////////
 
-export const MapSection = styled.div``;
+export const MapSection = styled.div`
+  display: grid;
+  place-items: center;
+  margin-bottom: 3rem;
+
+  @media screen and (min-width: 43em) {
+    margin-bottom: 5rem;
+  }
+
+  @media screen and (min-width: 62em) {
+    margin-bottom: 8rem;
+  }
+`;
 
 export const MapImgWrapper = styled.picture``;
 
@@ -245,6 +257,30 @@ export const MapImgWrapper = styled.picture``;
 
 export const ContactFormSection = styled.section`
   padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 62em) {
+    flex-direction: row;
+    gap: 6rem;
+    margin-bottom: 12rem;
+  }
+
+  @media screen and (min-width: 72em) {
+    padding: 4rem 5rem;
+  }
+
+  @media screen and (min-width: 82em) {
+    padding: 6rem 12rem;
+  }
+
+  @media screen and (min-width: 90em) {
+    padding: 8rem 18rem;
+  }
+
+  @media screen and (min-width: 106em) {
+    padding: 6rem 24rem;
+  }
 `;
 
 export const Form = styled.form`
@@ -252,6 +288,7 @@ export const Form = styled.form`
   flex-direction: column;
   gap: 4.3rem;
   position: relative;
+  width: 100%;
 `;
 
 export const InputWrapper = styled.div`
