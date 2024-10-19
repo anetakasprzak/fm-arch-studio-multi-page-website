@@ -158,6 +158,10 @@ export const HeritageSection = styled.section`
     padding: 0 5rem;
   }
 
+  @media screen and (min-width: 28.5em) {
+    padding: 0 9rem;
+  }
+
   @media screen and (min-width: 90em) {
     padding: 8rem 12rem;
   }
@@ -198,6 +202,7 @@ export const LeadersSection = styled.section`
 
   @media screen and (min-width: 72em) {
     gap: 14rem;
+    margin-bottom: 4rem;
   }
 
   @media screen and (min-width: 90em) {
@@ -214,6 +219,11 @@ export const LeadersHeading = styled.h2`
   @media screen and (min-width: 28.5em) {
     font-size: 3.6rem;
     margin-bottom: 4rem;
+    margin-left: 4rem;
+  }
+
+  @media screen and (min-width: 90em) {
+    margin-left: 0;
   }
 `;
 
