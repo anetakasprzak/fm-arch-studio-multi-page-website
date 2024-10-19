@@ -268,10 +268,12 @@ export const ContactFormSection = styled.section`
 
   @media screen and (min-width: 72em) {
     padding: 4rem 5rem;
+    gap: 8rem;
   }
 
   @media screen and (min-width: 82em) {
     padding: 6rem 12rem;
+    gap: 10rem;
   }
 
   @media screen and (min-width: 90em) {
