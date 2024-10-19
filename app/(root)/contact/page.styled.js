@@ -147,3 +147,44 @@ export const HeroContactText = styled.p`
   color: #60636d;
   line-height: 2.4rem;
 `;
+
+export const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  gap: 4.3rem;
+  position: relative;
+`;
+
+export const ContactSection = styled.section`
+  padding: 3.2rem;
+`;
+
+export const TextInput = styled.input`
+  all: unset;
+  height: 4.4rem;
+  border-bottom: 1px solid #1b1d23;
+
+  &::placeholder {
+    color: #c8ccd8;
+  }
+`;
+
+export const Textarea = styled.textarea`
+  all: unset;
+  height: 9.2rem;
+  border-bottom: 1px solid #1b1d23;
+
+  &::placeholder {
+    color: #c8ccd8;
+  }
+`;
+
+export const FormButton = styled.button`
+  all: unset;
+  width: 8rem;
+  height: 8rem;
+  background: #1b1d23 url("/assets/icons/icon-arrow.svg") no-repeat center;
+  position: absolute;
+  bottom: -8rem;
+  right: 0;
+`;

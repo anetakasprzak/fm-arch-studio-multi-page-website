@@ -4,10 +4,15 @@ import "./page.styled";
 import {
   ContactHeroImageWrapper,
   ContactHeroWrapper,
+  ContactSection,
   ContactSpan,
+  Form,
+  FormButton,
   HeroContactText,
   HeroHeading,
   HeroTextBox,
+  Textarea,
+  TextInput,
 } from "./page.styled";
 
 const ContactPage = () => {
@@ -43,6 +48,15 @@ const ContactPage = () => {
           </HeroContactText>
         </HeroTextBox>
       </ContactHeroWrapper>
+      <ContactSection>
+        <h1>Connect with us</h1>
+        <Form>
+          <TextInput type="text" placeholder="Name" />
+          <TextInput type="text" placeholder="Email" />
+          <Textarea placeholder="Message" />
+          <FormButton type="submit" />
+        </Form>
+      </ContactSection>
     </>
   );
 };
