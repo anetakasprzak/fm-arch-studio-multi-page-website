@@ -122,12 +122,20 @@ export const WelcomeWrapper = styled.div`
   }
 `;
 
-// export const MobileMiniBorder = styled.span`
-//   border-bottom: 5px solid #c8ccd8;
-//   width: 100%;
-//   /* height: 5px;
-//   width: 6.5rem; */
-// `;
+export const Container = styled.div`
+  display: flex;
+  gap: 4rem;
+`;
+
+export const Element = styled.div`
+  background-color: #e1e1e1;
+  display: none;
+
+  @media screen and (min-width: 70rem) {
+    display: block;
+    flex: 1 0 50%;
+  }
+`;
 
 export const WelcomeSpan = styled.span`
   display: none;

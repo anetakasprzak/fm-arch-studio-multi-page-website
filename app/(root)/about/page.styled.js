@@ -150,6 +150,21 @@ export const HeroAboutText = styled.p`
 
 ///////////////// OUR HERITAGE ///////////////////
 
+export const Container = styled.div`
+  display: flex;
+  gap: 4rem;
+`;
+
+export const Element = styled.div`
+  background-color: #e1e1e1;
+  display: none;
+
+  @media screen and (min-width: 70rem) {
+    display: block;
+    flex: 1 0 50%;
+  }
+`;
+
 export const HeritageSection = styled.section`
   margin-top: 5rem;
   padding: 0 3rem;
