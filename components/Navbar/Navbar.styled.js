@@ -82,6 +82,7 @@ export const MobileMenuLinks = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 1.7rem;
+  z-index: 10;
 
   @media screen and (min-width: 35em) {
     padding: 4rem 5rem;
@@ -101,5 +102,5 @@ export const Overlay = styled.div`
   height: 100%;
   width: 100%;
   background-color: black;
-  z-index: 1;
+  z-index: 9;
 `;

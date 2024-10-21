@@ -22,7 +22,7 @@ export const HeroTextBox = styled.div`
   background-color: #fff;
   padding: 4rem 2rem 1rem 3rem;
   margin-top: -4rem;
-  z-index: 10;
+  z-index: 5;
   max-width: 90%;
   place-self: start;
 
@@ -256,7 +256,7 @@ export const MapImgWrapper = styled.picture``;
 ////////////////  CONTACT FORM ///////////////////
 
 export const ContactFormSection = styled.section`
-  padding: 3.2rem;
+  padding: 3.2rem 3.2rem 12rem 3.2rem;
   display: flex;
   flex-direction: column;
 

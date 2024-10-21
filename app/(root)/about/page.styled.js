@@ -22,7 +22,7 @@ export const HeroTextBox = styled.div`
   background-color: #fff;
   padding: 4rem 2rem 1rem 3rem;
   margin-top: -4rem;
-  z-index: 10;
+  z-index: 5;
   max-width: 90%;
   place-self: start;
 
