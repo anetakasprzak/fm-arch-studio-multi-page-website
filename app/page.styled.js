@@ -236,6 +236,7 @@ export const WelcomeText = styled.p`
 export const AboutUsWrapper = styled.div`
   background-color: #60636d;
   padding: 16.5rem 3rem;
+  border-radius: 1.6rem;
 
   @media screen and (min-width: 28.5rem) {
     margin: 0 4rem;

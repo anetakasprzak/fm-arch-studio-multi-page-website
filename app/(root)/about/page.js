@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import Image from "next/image";
@@ -75,7 +76,7 @@ const AboutPage = () => {
               country.
               <br />
               <br />
-              Speciliazing in Urban Design allowed us to focus on creating
+              Specializing in Urban Design allowed us to focus on creating
               exceptional structures that live in harmony with their
               surroundings. We consider every detail from every surrounding
               element to inform our designs.
