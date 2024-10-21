@@ -24,9 +24,9 @@ import {
   Container,
   Element,
 } from "./page.styled";
-import Button from "./_components/Button/Button";
+import Button from "../components/Button/Button";
 import Link from "next/link";
-import PortfolioElement from "./_components/PortfolioEl/PortfolioEl";
+import PortfolioElement from "../components/PortfolioEl/PortfolioEl";
 
 export default function Home() {
   return (
